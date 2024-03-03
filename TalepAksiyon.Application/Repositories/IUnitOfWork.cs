@@ -4,7 +4,7 @@ namespace TalepAksiyon.Application.Repositories;
 
 public interface IUnitOfWork
 {
-  IRepository Repository { get; }
+  //IRepository Repository { get; }
   //ICustomerRepository CustomerRepository { get; }
   //IUserRepository UserRepository { get; }
   //IProjectRepository ProjectRepository { get; }

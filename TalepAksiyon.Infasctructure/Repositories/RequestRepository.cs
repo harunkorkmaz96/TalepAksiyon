@@ -17,10 +17,10 @@ public class RequestRepository : Repository, IRequestRepository
 {
   private readonly TalepAksiyonContext _context;
   private readonly DbSet<Request> _dbSet;
-  public RequestRepository(TalepAksiyonContext context, DbSet<Request> dbSet): base(context)
+  public RequestRepository(TalepAksiyonContext context): base(context)
   {
     _context = context;
-    _dbSet = dbSet;
+    _dbSet = _context.Set<Request>();
   }
   public bool CheckAny(Expression<Func<Request, bool>> filter = null)
   {
