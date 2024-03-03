@@ -25,8 +25,8 @@ namespace TalepAksiyon.Infasctructure.Repositories
     //private IUserRepository _userRepository;
     //public IUserRepository UserRepository => _userRepository ?? (_userRepository = new UserRepository(context, session, this));
 
-    //private IProjectRepository _projectRepository;
-    //public IProjectRepository ProjectRepository => _projectRepository ?? (_projectRepository = new ProjectRepository(context, session, this));
+    private IProjectRepository _projectRepository;
+    public IProjectRepository ProjectRepository => _projectRepository ?? (_projectRepository = new ProjectRepository(context));
 
     //private IProjectNoteRepository _projectNoteRepository;
     //public IProjectNoteRepository ProjectNoteRepository => _projectNoteRepository ?? (_projectNoteRepository = new ProjectNoteRepository(context, session, this));
